@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-switchbot-local-wosensorth",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "lint": "echo \"Warning: lint is not used\" && exit 0",
+    "build": "echo \"Warning: build is not used\" && exit 0"
+  },
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=1.0.0"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "SwitchBot",
+    "WoSensorTH",
+    "Temperature",
+    "Humidity",
+    "sensor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth.git"
+  },
+  "author": "mizuka-ninomae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth/issues"
+  },
+  "homepage": "https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth#readme"
+}
