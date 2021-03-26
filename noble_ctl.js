@@ -1,4 +1,4 @@
-const noble     = require ('@abandonware/noble')
+const noble = require ('@abandonware/noble')
 
 process.on ('message', function (blu_mac) {
   noble.on ('stateChange', function (state) {
@@ -6,7 +6,8 @@ process.on ('message', function (blu_mac) {
       noble.startScanning ([], true);
     }
     else {
-      process.send ({error: "from child!" });
+      throw new Error ();
+      process.exit ();
     }
   })
 

@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-switchbot-local-wosensorth",
+  "name": "switchbot-local-wosensorth",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,10 @@
     "homebridge": ">=1.0.0"
   },
   "dependencies": {
+    "@abandonware/noble": "^1.9.2-12",
+    "async-lock": "^1.2.8",
+    "child_process": "^1.0.2",
+    "path": "^0.12.7"
   },
   "keywords": [
     "homebridge-plugin",
@@ -24,12 +28,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth.git"
+    "url": "git+https://github.com/mizuka-ninomae/switchbot-local-wosensorth.git"
   },
   "author": "mizuka-ninomae",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth/issues"
+    "url": "https://github.com/mizuka-ninomae/switchbot-local-wosensorth/issues"
   },
-  "homepage": "https://github.com/mizuka-ninomae/homebridge-switchbot-local-wosensorth#readme"
+  "homepage": "https://github.com/mizuka-ninomae/switchbot-local-wosensorth#readme"
 }
