@@ -1,7 +1,6 @@
 {
-  "name": "switchbot-local-wosensorth",
-  "version": "0.1.0",
-  "description": "",
+  "name": "switchbot_local_wosensorth",
+  "version": "0.1.3",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
@@ -28,12 +27,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mizuka-ninomae/switchbot-local-wosensorth.git"
+    "url": "git+https://github.com/mizuka-ninomae/switchbot_local_wosensorth.git"
   },
   "author": "mizuka-ninomae",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mizuka-ninomae/switchbot-local-wosensorth/issues"
+    "url": "https://github.com/mizuka-ninomae/switchbot_local_wosensorth/issues"
   },
-  "homepage": "https://github.com/mizuka-ninomae/switchbot-local-wosensorth#readme"
+  "homepage": "https://github.com/mizuka-ninomae/switchbot_local_wosensorth#readme",
+  "description": ""
 }
