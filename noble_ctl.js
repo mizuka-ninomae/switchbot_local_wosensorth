@@ -1,9 +1,9 @@
 const noble = require ('@abandonware/noble')
 
-process.on ('message', function (blu_mac) {
+process.on ('message', function (obj) {
   noble.on ('stateChange', function (state) {
     if (state === 'poweredOn') {
-      noble.startScanning ([], true);
+      noble.startScanning (obj.s_uuid, true);
     }
     else {
       throw new Error ();
@@ -12,7 +12,7 @@ process.on ('message', function (blu_mac) {
   })
 
   noble.on ('discover', function (peripheral) {
-    if (blu_mac.toUpperCase ().replace (/:/g,"") == peripheral.address.toUpperCase ().replace (/:/g,"")) {
+    if (obj.ble_mac.toUpperCase ().replace (/:/g,"") == peripheral.address.toUpperCase ().replace (/:/g,"")) {
       noble.stopScanning ();
       process.send ({ message: peripheral.advertisement });
     }
