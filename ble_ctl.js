@@ -1,6 +1,6 @@
 const Bluez = require('bluez');
 
-const ble   = new Bluez ();
+const ble    = new Bluez ();
 this.adapter = null;
 
 process.on ('message', function (ble_mac) {
@@ -14,9 +14,6 @@ process.on ('message', function (ble_mac) {
      if (ble_mac.toUpperCase ().replace (/:/g,"") == address.toUpperCase ().replace (/:/g,"")) {
        process.send ({ message: props });
        this.adapter.StopDiscovery ();
-     }
-     else {
-
      }
    });
 })
